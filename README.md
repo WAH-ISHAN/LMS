@@ -1,4 +1,4 @@
-```markdown
+
 # Learning Management System (LMS)
 
 A role-based **Learning Management System (LMS)** built with a **Java Spring Boot** backend and **React** frontend.
