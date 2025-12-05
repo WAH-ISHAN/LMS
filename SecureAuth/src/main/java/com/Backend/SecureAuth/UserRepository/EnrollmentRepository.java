@@ -1,5 +1,7 @@
 package com.Backend.SecureAuth.UserRepository;
 
+
+
 import com.Backend.SecureAuth.model.Course;
 import com.Backend.SecureAuth.model.Enrollment;
 import com.Backend.SecureAuth.model.User;
@@ -10,7 +12,9 @@ import java.util.Optional;
 
 public interface EnrollmentRepository extends JpaRepository<Enrollment, Long> {
 
-    List<Enrollment> findByStudentId(Long student);
-    List<Enrollment> findByCourseId(Long course);
+    List<Enrollment> findByStudent(User student);
+
+    List<Enrollment> findByCourse(Course course);
+
     Optional<Enrollment> findByStudentAndCourse(User student, Course course);
 }
